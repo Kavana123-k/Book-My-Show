@@ -1,0 +1,27 @@
+.search {
+  padding: 1px;
+  margin-right: 10px;
+}
+
+.bi-list {
+  color: #f8f9fa;
+}
+.firstrow {
+  padding-top: 16px;
+  padding-bottom: 15px;
+}
+
+.firstCon {
+  margin-left: 0px;
+  max-width: 100%;
+}
+
+#signIn {
+  margin-right: 10px;
+}
+
+input {
+  background-color: rgb(65, 61, 61);
+  color: antiquewhite;
+  border: 1px solid #3c4146;
+}

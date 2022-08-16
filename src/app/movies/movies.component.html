@@ -1,0 +1,403 @@
+<!-- <div
+  class="carousel"
+  data-flickity='{"wrapAround": true ,"autoPlay": true
+  }'
+>
+  <div class="carousel-cell" *ngFor="let i of movieList">
+    <img class="w3-image" src="{{ i.image }}" style="width: 100%" />
+  </div>
+</div> -->
+
+<div class="container">
+  <div class="cont">
+    <div class="row">
+      <div class="col-4" style="width: 30%">
+        <h3>Filter</h3>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="true/false"
+                aria-controls="flush-collapseOne"
+              >
+                Languages
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square lang"
+                >
+                  English
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square lang"
+                >
+                  Himdi
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square lang"
+                >
+                  Kannada</button
+                ><br />
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square lang"
+                >
+                  Malayalam
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square lang"
+                >
+                  Telugu
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square lang"
+                >
+                  Tamil</button
+                ><br />
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square lang"
+                >
+                  Tulu
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="true/false"
+                aria-controls="flush-collapseTwo"
+              >
+                Genres
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Comedy
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Action
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Drama</button
+                ><br />
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Thruller
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Crime
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Adventure</button
+                ><br />
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Family
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Fantasy
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Horror</button
+                ><br />
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Period
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Political
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square genres"
+                >
+                  Sci-Fi</button
+                ><br />
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="true/false"
+                aria-controls="flush-collapseThree"
+              >
+                Format
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square format"
+                >
+                  Secondary
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square format"
+                >
+                  2D
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square format"
+                >
+                  3D</button
+                ><br />
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square format"
+                >
+                  4DX 3D
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square format"
+                >
+                  MX4D 3D</button
+                ><br />
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square format"
+                >
+                  3D SCREEN X
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square format"
+                >
+                  4DX
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-default btn-lg btn-square format"
+                >
+                  IMAX 3D</button
+                ><br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div>
+          <button type="button" class="btn btn-outline-danger">
+            Browse By cinema
+          </button>
+        </div>
+      </div>
+      <div class="col-8">
+        <h3 style="margin-left: 2%; margin-bottom: 2%">
+          Movies In Mangaluru(Manglore)
+        </h3>
+        <div style="margin-left: 2%; margin-bottom: 2%" class="grid">
+          <button type="button" class="btn btn-outline-secondary rounded-pill">
+            English
+          </button>
+          <button type="button" class="btn btn-outline-secondary rounded-pill">
+            Hindi
+          </button>
+          <button type="button" class="btn btn-outline-secondary rounded-pill">
+            Malayalam
+          </button>
+          <button type="button" class="btn btn-outline-secondary rounded-pill">
+            Tamil
+          </button>
+          <button type="button" class="btn btn-outline-secondary rounded-pill">
+            Telugu
+          </button>
+          <button type="button" class="btn btn-outline-secondary rounded-pill">
+            Tulu
+          </button>
+          <button type="button" class="btn btn-outline-secondary rounded-pill">
+            Kannada
+          </button>
+        </div>
+
+        <div class="row">
+          <div style="margin-bottom: 2%; margin-left: 2%">
+            <img
+              src="../assets/images/movieComp/coming.png"
+              style="cursor: pointer; width: 100%"
+            />
+          </div>
+        </div>
+
+        <div class="row movie" style="margin-bottom: 2%; margin-left: 2%">
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie1.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie3.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie4.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie5.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie6.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie7.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie8.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie9.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie10.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie12.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie13.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie14.png"
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="column movieCol">
+            <img
+              src="../assets/images/movieComp/movie11.png"
+              style="cursor: pointer"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="margin: 2%">
+  <div style="display: flex; flex-wrap: wrap; background-color: white">
+    <p style="cursor: pointer" href="#">Home</p>
+    <p>--></p>
+    <p>Movies</p>
+  </div>
+  <div>
+    <p>
+      Enjoy Online Ticket Booking for Movies in Mangaluru (Mangalore) With
+      BookMyShow
+    </p>
+    <p>
+      If you are planning for <strong>movie ticket bookings</strong> for the
+      latest movies in Mangaluru (Mangalore), don't look any further. Now it is
+      easy to get on with<strong>online ticket booking</strong> with BookMyShow.
+      Your one-stop solution for movies to watch this weekend. Everyone enjoys
+      watching their favorite movies on the big screen, and the excitement of
+      watching it with friends is unparalleled. If you have been eagerly waiting
+      for a movie that you can watch with your friends and family, now you know
+      where to get the tickets from. When you watch a film in a cinema theatre,
+      you get to watch it on a massive screen with surround-sound, and that
+      enhances your movie-watching experience. Thus, allowing you to be a part
+      of the actual movie. Get to know about
+    </p>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<app-cards></app-cards>
+<div id="fullSent">
+  <h5 id="intro">INTRODUCING PHYSICAL GIFT CARDS</h5>
+  <div id="sentence">
+    " Gift your loved ones a range of experiences from movies to events, plays,
+    concerts and sports with a BookMyShow gift card. Now pick one up at a store
+    near you!! "<br />
+    "BookMyShow Gift Cards are now available at thousands of stores at all major
+    towns across India. "
+  </div>
+  <div>
+    <h6 id="available">Available at stores near you</h6>
+    <div class="d-flex justify-content-center">
+      <img
+        *ngFor="let avail of availstore"
+        class="movie-poster"
+        src="{{ avail.image }}"
+        alt="movie-poster"
+      />
+    </div>
+  </div>
+  <div>
+    <h6>Or order online from</h6>
+    <div class="d-flex justify-content-center">
+      <img
+        *ngFor="let avail of orderOnlin"
+        class="movie-poster"
+        src="{{ avail.image }}"
+        alt="movie-poster"
+      />
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <div class="bookmyshow-card">
+      <img
+        class="movie-poster"
+        src="../assets/images/availbleoffer/avail8.png"
+        alt="movie-poster"
+      />
+    </div>
+  </div>
+
+  <div>
+    <div class="d-flex justify-content-center" id="links">
+      <p id="ele">Terms & Conditions</p>
+      <p>Need Help?</p>
+      <p>Check Gift Card Balance</p>
+    </div>
+  </div>
+
+  <br />
+</div>

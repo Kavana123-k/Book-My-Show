@@ -1,0 +1,14 @@
+<app-giftcards></app-giftcards>
+
+<div class="movie-grid">
+  <div class="movie-grid-component">
+    <div class="image-container">
+      <img
+        *ngFor="let i of allCard"
+        class="movie-poster"
+        src="{{ i.image }}"
+        alt="movie-poster"
+      />
+    </div>
+  </div>
+</div>

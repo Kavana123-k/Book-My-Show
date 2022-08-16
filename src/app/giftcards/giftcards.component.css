@@ -1,0 +1,36 @@
+.theme {
+  padding: 16px;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: normal;
+  line-height: 1.56;
+  color: rgb(102, 102, 102);
+}
+
+.btn-gift {
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 0px 16px;
+}
+
+.btn-danger {
+  border-radius: 16px;
+  border: 1px solid rgb(173, 168, 168);
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.33;
+  padding: 8px 16px;
+  margin: 8px;
+  color: rgb(87, 87, 87);
+  cursor: pointer;
+  background: rgb(235, 232, 232);
+}
+
+.btn-danger:hover {
+  background-color: #e44b1c;
+  transition: 0.7s;
+}

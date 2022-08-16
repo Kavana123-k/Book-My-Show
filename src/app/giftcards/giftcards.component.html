@@ -1,0 +1,26 @@
+<app-cards></app-cards>
+<div class="theme">Pick card from one of our theme</div>
+
+<div class="btn-gift">
+  <button
+    type="button"
+    class="btn btn-danger"
+    [routerLink]="['/all-gift-card']"
+  >
+    ALL
+  </button>
+  <button
+    type="button"
+    id="butn"
+    class="btn btn-danger"
+    [routerLink]="['/generic']"
+  >
+    Generic
+  </button>
+  <button type="button" class="btn btn-danger" [routerLink]="['/ocassion']">
+    Ocassion
+  </button>
+  <button type="button" class="btn btn-danger" [routerLink]="['/combo']">
+    Combos
+  </button>
+</div>

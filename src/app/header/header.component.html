@@ -1,0 +1,76 @@
+<!-- <app-homepage></app-homepage> -->
+
+<div class="carousel" data-flickity='{"wrapAround": true ,"autoPlay": true}'>
+  <div class="carousel-cell">
+    <img
+      class="w3-image"
+      src="../assets/images/slider/slider1.png"
+      style="width: 100%"
+    />
+  </div>
+  <div class="carousel-cell">
+    <img
+      class="w3-image"
+      src="../assets/images/slider/slide2.png"
+      alt="Presents"
+      style="width: 100%"
+    />
+  </div>
+  <div class="carousel-cell">
+    <img
+      class="w3-image"
+      src="../assets/images/slider/slide3.png"
+      alt="Presents"
+      style="width: 100%"
+    />
+  </div>
+  <div class="carousel-cell">
+    <img
+      class="w3-image"
+      src="../assets/images/slider/slider4.png"
+      alt="Presents"
+      style="width: 100%"
+    />
+  </div>
+</div>
+
+<!-- <div class="container">
+  <div><img src="../assets/images/presents/present1.png" alt="Presents" /></div>
+  <h3>Recommnended Movies</h3>
+  <div class="movie-grid">
+    <div class="movie-grid-component">
+      <div class="image-container">
+        <img
+          *ngFor="let i of recommended"
+          class="sponser-poster"
+          src="{{ i.image }}"
+          alt="movie-poster"
+        />
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container" style="margin-top: 5%">
+  <div>
+    <img
+      src="../assets/images/presents/present1.png"
+      alt="Presents"
+      style="margin-left: 2%"
+    />
+  </div>
+  <h3 style="margin-left: 2%">Recommnended Movies</h3>
+
+  <div
+    class="carousel carousel2"
+    data-flickity='{ "lazyLoad": 2, "initialIndex": 2,"pageDots": false }'
+  >
+    <div class="carousel-cell carousel-cell2" *ngFor="let i of recommended">
+      <img
+        class="carousel-cell-image carousel-cell-image2"
+        src="{{ i.image }}"
+        alt="movie-poster"
+      />
+    </div>
+  </div>
+</div>

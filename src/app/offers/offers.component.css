@@ -1,0 +1,79 @@
+input {
+  height: 2rem;
+  width: 26rem;
+  overflow: hidden;
+  border-radius: 0rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: #fff;
+}
+
+.bi-credit-card::before {
+  content: "\f2dc";
+}
+
+.bi-book-half::before {
+  content: "\f193";
+}
+
+.bi-wallet-fill::before {
+  content: "\f613";
+}
+
+.bi-search::before {
+  content: "\f52a";
+}
+
+.bi-search {
+  font-size: 1rem;
+  color: #999;
+}
+.container {
+  padding: 3%;
+}
+
+.btn-light {
+  margin: 2%;
+  height: 50px;
+  width: 64px;
+  border: 2px solid gray;
+}
+
+.flex button {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container for flexboxes */
+.row {
+  --bs-gutter-x: 5.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(223, 222, 222);
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 60%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}

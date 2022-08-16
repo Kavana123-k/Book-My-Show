@@ -1,0 +1,131 @@
+.back {
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  padding: 0px;
+  background-color: transparent;
+}
+
+.back1 {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px auto;
+  max-width: 1240px;
+}
+
+.firstCol {
+  width: 50%;
+  align-self: flex-start;
+  margin-top: 3rem;
+}
+
+.secCol {
+  background: #0000;
+  border: 0;
+  font-size: 100%;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  vertical-align: initial;
+}
+.bi-cloud-download-fill::before {
+  content: "\f29a";
+}
+.bi-cloud-download::before {
+  content: "\f29b";
+}
+
+.bi-person-video::before {
+  content: "\f677";
+}
+.bi-person-video2::before {
+  content: "\f678";
+}
+.bi-person-video3::before {
+  content: "\f679";
+}
+
+.bi-camera-video-fill::before {
+  content: "\f21c";
+}
+.bi-camera-video-off-fill::before {
+  content: "\f21d";
+}
+.bi-camera-video-off::before {
+  content: "\f21e";
+}
+.bi-camera-video::before {
+  content: "\f21f";
+}
+
+.firstCol {
+  /* display: flex; */
+  /* justify-content: center; */
+  color: white;
+}
+
+.watchDownload {
+  display: flex;
+  justify-content: center;
+}
+
+.receiveBtn {
+  width: 100%;
+  margin: 0%;
+  border: 0;
+  color: lightgrey;
+  margin-top: 5%;
+  height: 50px;
+  border-radius: 10px;
+}
+
+input {
+  border: 0.5px solid #dee2e6;
+  border-radius: 5px;
+  width: 100%;
+}
+
+label:before {
+  content: "*";
+  color: red;
+}
+
+h5 {
+  margin: 3%;
+}
+
+.sponser {
+  display: flex;
+  justify-content: center;
+}
+
+.sponimag {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.screen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.partner {
+  margin-top: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.partner2 {
+  height: 200px;
+  margin: 0px auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
